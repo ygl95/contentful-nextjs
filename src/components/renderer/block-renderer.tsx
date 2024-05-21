@@ -8,6 +8,7 @@ import { Video } from './video';
 import { Section } from './section';
 import { HelpCenterArticle } from './help-center-article';
 import { PageContentTypes, ComponentContentTypes } from '../../lib/constants';
+import Recipe from './recipe';
 
 type BlockRendererProps = {
   block: any;
@@ -49,6 +50,7 @@ const ContentTypeMap = {
   [ComponentContentTypes.Text]: Text,
   [ComponentContentTypes.Image]: Image,
   [ComponentContentTypes.Video]: Video,
+  [ComponentContentTypes.Recipe]: Recipe,
 };
 
 export { BlockRenderer };

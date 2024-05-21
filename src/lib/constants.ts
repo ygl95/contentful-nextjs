@@ -8,6 +8,7 @@ export const ComponentContentTypes = {
   Text: 'component_text',
   Image: 'component_image',
   Video: 'component_video',
+  Recipe: 'recipe',
 };
 
 export const PageContentTypes = {
