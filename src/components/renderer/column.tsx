@@ -14,7 +14,7 @@ export function Column(section: TypeComponentColumn) {
   }
 
   return (
-    <div className={`${cssClass}`}>
+    <div className={`grid lg:grid-cols-4 gap-4 ${cssClass}`}>
       {columnTitle && <h3>{columnTitle}</h3>}
       {columns.map((column, index) => (
         <SubColumn key={index} subColumn={column} />
