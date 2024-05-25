@@ -7,7 +7,7 @@ import { TopNavigation } from 'components/top-navigation';
 import App, { AppContext } from 'next/app';
 import { getLocale, LocaleContext, UnknownLocale } from 'lib/translations';
 
-function HelpdeskApp({ Component, pageProps }) {
+function RecipesApp({ Component, pageProps }) {
   const { locale, ...otherPageProps } = pageProps;
 
   return (
@@ -34,4 +34,4 @@ function HelpdeskApp({ Component, pageProps }) {
   );
 }
 
-export default HelpdeskApp;
+export default RecipesApp;
