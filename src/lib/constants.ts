@@ -1,4 +1,4 @@
-export const SITE_NAME = 'Help Center';
+export const SITE_NAME = 'Vins App';
 
 export const PageContentType = 'page';
 
@@ -9,10 +9,10 @@ export const ComponentContentTypes = {
   Image: 'component_image',
   Video: 'component_video',
   Recipe: 'recipe',
+  Column: 'componentColumn',
 };
 
 export const PageContentTypes = {
-  HelpDeskArticle: 'page_help_center_article',
   LandingPage: 'page_landing',
 };
 

@@ -6,9 +6,9 @@ import { Text } from './text';
 import { Image } from './image';
 import { Video } from './video';
 import { Section } from './section';
-import { HelpCenterArticle } from './help-center-article';
 import { PageContentTypes, ComponentContentTypes } from '../../lib/constants';
 import Recipe from './recipe';
+import { Column } from './column';
 
 type BlockRendererProps = {
   block: any;
@@ -46,7 +46,7 @@ const BlockRenderer = ({ block }: BlockRendererProps) => {
 const ContentTypeMap = {
   [ComponentContentTypes.Hero]: Hero,
   [ComponentContentTypes.Section]: Section,
-  [PageContentTypes.HelpDeskArticle]: HelpCenterArticle,
+  [ComponentContentTypes.Column]: Column,
   [ComponentContentTypes.Text]: Text,
   [ComponentContentTypes.Image]: Image,
   [ComponentContentTypes.Video]: Video,
