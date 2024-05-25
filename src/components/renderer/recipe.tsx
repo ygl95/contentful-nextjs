@@ -6,7 +6,7 @@ const Recipe = ({ fields }: TypeRecipe) => {
   return (
     <div>
       {title}
-      <img className="w-full" src={`${thumbnail.fields.file.url}?w=960`} />
+      <img className="" src={`${thumbnail.fields.file.url}?w=960`} />
     </div>
   );
 };
