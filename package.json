@@ -12,7 +12,8 @@
     "tsc": "tsc",
     "generate-types": "cf-content-types-generator -s $CF_SPACE_ID -t $CF_CMA_TOKEN -o src/lib/generated-types",
     "ts": "node -r esm -r ts-node/register/transpile-only ",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-css": "tailwindcss build src/styles/index.css -o public/styles.css" 
   },
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^15.12.0",
