@@ -9,9 +9,9 @@ class AppDocument extends Document {
 
   render() {
     return (
-      <Html className="font-sans antialiased text-gray-800">
+      <Html>
         <Head />
-        <body className="bg-white">
+        <body>
           <Main />
           <NextScript />
         </body>
