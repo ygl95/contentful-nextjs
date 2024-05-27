@@ -1,9 +1,9 @@
-import { TypeRecipe } from 'lib/types';
+import { TypeRecipeTile } from 'lib/types';
 import Link from 'next/link';
 import React from 'react';
 
-const Recipe = ({ fields }: TypeRecipe) => {
-  const { title, shortDescription, thumbnail, cookingTime, slug } = fields;
+const Recipe = ({ fields }: TypeRecipeTile) => {
+  const { title, shortDescription, thumbnail, cookingTime, ctaText, ctaLink } = fields;
   return (
     <div className="bg-white rounded overflow-hidden shadow-md relative">
       <article className="recide-details--container">
@@ -21,7 +21,7 @@ const Recipe = ({ fields }: TypeRecipe) => {
             <p>Vin Yaguel</p>
           </div>
           <div className="recipe-grid__readmore text-blue-600 underline">
-            <Link href={'/' + slug}>cook it!</Link>
+            <Link href={ctaLink}>{ctaText}</Link>
           </div>
         </div>
       </article>

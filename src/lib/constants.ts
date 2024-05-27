@@ -9,6 +9,7 @@ export const ComponentContentTypes = {
   Image: 'component_image',
   Video: 'component_video',
   Recipe: 'recipe',
+  RecipeTile: 'recipeTile',
   Column: 'componentColumn',
 };
 

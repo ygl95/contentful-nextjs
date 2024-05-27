@@ -9,6 +9,7 @@ import { Section } from './section';
 import { PageContentTypes, ComponentContentTypes } from '../../lib/constants';
 import Recipe from './recipe';
 import { Column } from './column';
+import RecipeDetails from './recipe-details';
 
 type BlockRendererProps = {
   block: any;
@@ -50,7 +51,8 @@ const ContentTypeMap = {
   [ComponentContentTypes.Text]: Text,
   [ComponentContentTypes.Image]: Image,
   [ComponentContentTypes.Video]: Video,
-  [ComponentContentTypes.Recipe]: Recipe,
+  [ComponentContentTypes.RecipeTile]: Recipe,
+  [ComponentContentTypes.Recipe]: RecipeDetails,
 };
 
 export { BlockRenderer };
