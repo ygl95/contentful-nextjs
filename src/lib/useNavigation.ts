@@ -16,17 +16,10 @@ function linkToPage(locale: Locale, page: TypePage, isPreview: boolean): LinkPro
   const pageType = page.sys.contentType.sys.id;
 
   switch (pageType) {
-    case PageContentTypes.HelpDeskArticle: {
-      return {
-        href: withPreviewParam('/[locale]/articles/[slug]', isPreview),
-        as: withPreviewParam(`/${locale}/articles/${slug}`, isPreview),
-      };
-    }
-
     case PageContentTypes.LandingPage: {
       return {
-        href: withPreviewParam(`/[locale]/[slug]`, isPreview),
-        as: withPreviewParam(`/${locale}/${slug}`, isPreview),
+        href: withPreviewParam(`/[slug]`, isPreview),
+        as: withPreviewParam(`/${slug}`, isPreview),
       };
     }
 

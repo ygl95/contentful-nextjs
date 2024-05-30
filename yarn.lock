@@ -23,6 +23,14 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@contentful/rich-text-html-renderer@^16.5.0":
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-html-renderer/-/rich-text-html-renderer-16.5.0.tgz#74b8b35746720414c34b59a2a491146b20c6086d"
+  integrity sha512-u45iFUr7BtXT29DLLTk8FgiY1cNYcom8WPAN3NRmBK3RBASIv09fNC7H2C8JTuLlJNNNIRJzPGE33Qm101NGaQ==
+  dependencies:
+    "@contentful/rich-text-types" "^16.5.0"
+    escape-html "^1.0.3"
+
 "@contentful/rich-text-plain-text-renderer@^15.12.0":
   version "15.12.0"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-plain-text-renderer/-/rich-text-plain-text-renderer-15.12.0.tgz"
@@ -30,12 +38,12 @@
   dependencies:
     "@contentful/rich-text-types" "^15.12.0"
 
-"@contentful/rich-text-react-renderer@^15.12.0":
-  version "15.12.0"
-  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.12.0.tgz"
-  integrity sha512-vnmWmVa/paBUHv8wPkcOC0pE8Vc/s+5g9y1UoProy/SDnOs/SAXd2R6EoMM885tk29XyAeF//Lxifo8NL8hBnQ==
+"@contentful/rich-text-react-renderer@^15.21.0":
+  version "15.21.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.21.0.tgz#ebcd520d5204bce31ac76acea16b860d581ecf60"
+  integrity sha512-wlnvJ2Js4VWMoM9n0KnbDffhRb7Q2HGc+fHWpl8o5JlXbh22yZ5Z9f0XQKZS6heS1t7biAdzsRMGuN4fnpVJ1w==
   dependencies:
-    "@contentful/rich-text-types" "^15.12.0"
+    "@contentful/rich-text-types" "^16.5.0"
 
 "@contentful/rich-text-types@^15.12.0":
   version "15.12.0"
@@ -46,6 +54,11 @@
   version "16.3.5"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.3.5.tgz#927433a84416101ba3dbf19bd0924e755f5e6d65"
   integrity sha512-ZLq6p5uyQXg+i1XGDFu4tAc2VYS12S1KA/jIOyyZjNgC1DvDajsi1JzuiBuOuMEhi1sKEUy6Ry3Yr9jsQtOKuQ==
+
+"@contentful/rich-text-types@^16.5.0":
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.5.0.tgz#f82f38d2131ebae10458990cbb7574d9b77b77e7"
+  integrity sha512-Z5fls/6Hs+ETq6vx+sfiq+n+z3dwurPVJukgLvThdvzs4VlChoPkRIKr4WrBdjzLYqUspawlf7XvtuUpp32glw==
 
 "@cspotcode/source-map-consumer@0.8.0":
   version "0.8.0"
@@ -273,6 +286,11 @@
   integrity sha512-w860r9d456xhw1GPaos9yQF+BZeFY9UKdrINbL3fZFX5ZHhr/zGT4Fep5wUkHogjjnSB8+ZHi3D6j2jScIizUw==
   dependencies:
     "@oclif/core" "^3.26.2"
+
+"@popperjs/core@^2.9.3":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
@@ -852,7 +870,7 @@ cardinal@^2.1.1:
     ansicolors "~0.3.2"
     redeyed "~2.1.0"
 
-cf-content-types-generator@^2.15.1:
+cf-content-types-generator@^2.0.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/cf-content-types-generator/-/cf-content-types-generator-2.15.1.tgz#201e51cf67c83188720283ef0aaefbef8bd85b48"
   integrity sha512-jEGU6G1Eo+NWMFyYVnuen0+U19ZxuWcUZWP3l/bl0aPb8xdj9jA26VGsujI4FO/dPUjrtaF7LXKeO0SwbZqy7w==
@@ -1130,12 +1148,23 @@ contentful-management@^11.0.1:
     lodash.isplainobject "^4.0.6"
     type-fest "^4.0.0"
 
-contentful-resolve-response@^1.8.1:
+contentful-resolve-response@^1.3.12, contentful-resolve-response@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.8.1.tgz#b44ff13e12fab7deb00ef6216d8a7171bdda0395"
   integrity sha512-VXGK2c8dBIGcRCknqudKmkDr2PzsUYfjLN6hhx71T09UzoXOdA/c0kfDhsf/BBCBWPWcLaUgaJEFU0lCo45TSg==
   dependencies:
     fast-copy "^2.1.7"
+
+contentful-sdk-core@^7.0.5:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-7.1.0.tgz#74d3ef8b167c5ac390fbb5db2d6e433731e05115"
+  integrity sha512-RzTPnRsbCdVAhyka3wa9sDsAu9YsxoerNgaMqd63Ljb7qpG2zkdHcP7NTfyIbuHDJNJdAQdifyafxfEEwP+q/w==
+  dependencies:
+    fast-copy "^2.1.7"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    p-throttle "^4.1.1"
+    qs "^6.9.4"
 
 contentful-sdk-core@^8.1.0:
   version "8.1.2"
@@ -1148,7 +1177,7 @@ contentful-sdk-core@^8.1.0:
     p-throttle "^4.1.1"
     qs "^6.11.2"
 
-contentful@^10.6.1, contentful@^10.6.9, contentful@^10.9.3:
+contentful@^10.6.1, contentful@^10.6.9:
   version "10.9.3"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-10.9.3.tgz#89f7ad9001416904a6923959c5e44b7965add142"
   integrity sha512-+X5Om82PrzYTyJplVUZxJ3DCWE7JqVQ/e2/FUf+WOodO7UJgKZX8Z47px9Lx6Ml6mH15X7GbGRO+2uWQ7KmgJA==
@@ -1159,6 +1188,18 @@ contentful@^10.6.1, contentful@^10.6.9, contentful@^10.9.3:
     contentful-sdk-core "^8.1.0"
     json-stringify-safe "^5.0.1"
     type-fest "^4.0.0"
+
+contentful@^9.1.18:
+  version "9.3.6"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-9.3.6.tgz#b2c9b7099b7f2b5ae7868dbbf894bb24e47ce449"
+  integrity sha512-RJZ+CUh2fC6OQL89XHCSVsj1AQxqscgq+9wDdj+aWd67aZWzXnanKFVB5MsICM6y49D6XX4pf88d2mkyw74qKA==
+  dependencies:
+    "@contentful/rich-text-types" "^16.0.2"
+    axios "^1.6.7"
+    contentful-resolve-response "^1.3.12"
+    contentful-sdk-core "^7.0.5"
+    fast-copy "^2.1.7"
+    json-stringify-safe "^5.0.1"
 
 cosmiconfig@^7.0.1:
   version "7.0.1"
@@ -1438,6 +1479,11 @@ escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
+
+escape-html@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
 
 escape-string-regexp@4.0.0, escape-string-regexp@^4.0.0:
   version "4.0.0"
@@ -1807,6 +1853,14 @@ flatted@^3.1.0:
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
+
+flowbite@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/flowbite/-/flowbite-2.3.0.tgz#0730e35d8b0d1dcdea26bb27d848bd9c0141cde1"
+  integrity sha512-pm3JRo8OIJHGfFYWgaGpPv8E+UdWy0Z3gEAGufw+G/1dusaU/P1zoBLiQpf2/+bYAi+GBQtPVG86KYlV0W+AFQ==
+  dependencies:
+    "@popperjs/core" "^2.9.3"
+    mini-svg-data-uri "^1.4.3"
 
 follow-redirects@^1.15.6:
   version "1.15.6"
@@ -2672,6 +2726,11 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
+mini-svg-data-uri@^1.4.3:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
+
 minimatch@^3.0.4, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -3337,7 +3396,7 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qs@^6.11.2:
+qs@^6.11.2, qs@^6.9.4:
   version "6.12.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.12.1.tgz#39422111ca7cbdb70425541cba20c7d7b216599a"
   integrity sha512-zWmv4RSuB9r2mYQw3zxQuHWeU+42aKi1wWig/j4ele4ygELZ7PEO6MM7rim9oAQH2A5MWfsAVf/jPvTPgCbvUQ==

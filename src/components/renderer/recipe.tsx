@@ -21,7 +21,7 @@ const Recipe = ({ fields }: TypeRecipeTile) => {
             <p>Vin Yaguel</p>
           </div>
           <div className="recipe-grid__readmore text-blue-600 underline">
-            <Link href={ctaLink}>{ctaText}</Link>
+            <Link href={`/${ctaLink}`}>{ctaText}</Link>
           </div>
         </div>
       </article>

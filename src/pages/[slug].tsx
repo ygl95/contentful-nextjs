@@ -9,6 +9,7 @@ import { PageContentTypes } from 'lib/constants';
 import { TypePage_landing } from 'lib/types';
 import { BlockRenderer } from 'components/renderer/block-renderer';
 import { withLocale } from 'lib/translations';
+import { Hero } from 'components/renderer/hero';
 
 export const getStaticPaths = async () => {
   const topPagesContentType = PageContentTypes.LandingPage;
@@ -54,10 +55,11 @@ export default function Landing({ page }: LandingProps) {
   }
 
   // eslint-disable-next-line no-unsafe-optional-chaining
-  const { sections = [] } = page.fields;
+  const { hero, sections = [] } = page.fields;
 
   return (
     <div>
+      <BlockRenderer block={hero} />
       <BlockRenderer block={sections} />
     </div>
   );

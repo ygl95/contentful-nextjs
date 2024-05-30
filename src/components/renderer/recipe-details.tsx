@@ -26,21 +26,15 @@ const RecipeDetails = ({ fields }: TypeRecipe) => {
   const { title, shortDescription, featuredImage, ingredients, method, cookingTime } = fields;
 
   return (
-    <div className="w-full container max-w-screen-xl mx-auto flex flex-wrap justify-between mt-0 py-8 px-8 relative">
-      <div className="recipe-featuredimage w-full">
-        <img
-          className="w-full h-32 sm:h-48 object-cover"
-          src={`${featuredImage.fields.file.url}`}
-        />
+    <div className="w-full container max-w-screen-xl mx-auto grid grid-flow-row justify-between mt-0 py-8 px-8 relative">
+      <div className="recipe-featuredimage w-full h-80 lg:h-96">
+        <img className="w-full h-full object-cover" src={`${featuredImage.fields.file.url}`} />
       </div>
       <div className="recipe-title mt-4">
         <h1 className="font-bold text-3xl">{title}</h1>
       </div>
-      <div className="recipe-cookingtime bg-gray-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-8 ml-2 mt-2">
-        <span>{cookingTime} mins</span>
-      </div>
       <div className="recipe-shortdescription mt-4">
-        <p className="text-gray-500 text-sm">{shortDescription}</p>
+        <span className="text-gray-500 text-sm">{shortDescription}</span>
       </div>
       <div className="recipe-ingredients mt-4">
         <h2 className="font-bold text-xl">Ingredients</h2>
@@ -57,6 +51,9 @@ const RecipeDetails = ({ fields }: TypeRecipe) => {
       </div>
       <div className="recipe-method mt-4">
         {documentToReactComponents(method, RICHTEXT_OPTIONS)}
+      </div>
+      <div className="recipe-cookingtime left-8	 bg-gray-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-8 ml-2 mt-2">
+        <span>{cookingTime} mins</span>
       </div>
     </div>
   );

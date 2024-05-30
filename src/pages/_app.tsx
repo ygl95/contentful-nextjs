@@ -6,6 +6,7 @@ import { PreviewBanner } from 'components/preview-banner';
 import { TopNavigation } from 'components/top-navigation';
 import App, { AppContext } from 'next/app';
 import { getLocale, LocaleContext, UnknownLocale } from 'lib/translations';
+import 'flowbite';
 
 function RecipesApp({ Component, pageProps }) {
   const { locale, ...otherPageProps } = pageProps;
